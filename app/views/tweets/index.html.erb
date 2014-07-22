@@ -1,0 +1,14 @@
+<h1> Check Out These Tweets </h1>
+
+<% @tweets.each do |tweet| %>
+
+<div class="tweet-module">
+	<div class="username">@<%= tweet.username %></div>
+	<%= tweet.content %><br>
+	<%= link_to 'Update', edit_tweet_path(tweet) %> | 
+	<%= link_to 'Delete', tweet, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
+
+<% end %>
+
+<button><%= link_to 'New Tweet', new_tweet_path %></button>

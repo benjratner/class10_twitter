@@ -1,0 +1,63 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+* {
+	font-family: helvetica neue;
+	font-weight: 200;
+}
+
+td {
+	width: 50px;
+}
+
+th {
+	text-align: left;
+}
+
+.tweet-content {
+	width: 100px;
+}
+
+.tweet-module {
+	width: 500px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 20px 0px;
+	padding: 20px;
+	line-height: 1.8em;
+}
+
+.username {
+	font-weight: 500;
+}
+
+button a {
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+}
+
+button {
+	padding: 5px 30px;
+	font-size: 1em;
+	color: black;
+}
+
+
+
+
+
